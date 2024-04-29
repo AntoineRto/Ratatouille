@@ -1,4 +1,4 @@
-@import "/node_modules/bootstrap/scss/functions";
+@import "./node_modules/bootstrap/scss/functions";
 
 // override vars
 
@@ -11,5 +11,7 @@ $danger:        #9A031E;
 
 
 
-@import "/node_modules/bootstrap/scss/variables";
-@import "/node_modules/bootstrap/scss/variables-dark";
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"
