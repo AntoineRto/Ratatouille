@@ -61,18 +61,4 @@
     justify-content: end;
   }
 
-/* media queries navbar link hover */
-@media screen and (max-width: 1051px) {
-  .mqMenu {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    
-  }
-  .whiteBar {
-    gap: 10px;
-  }
-}
-
-
 /* navbar link hover */
