@@ -4,7 +4,6 @@
   font-weight: 400;
   font-style: normal;
 }
-
 .poppins-medium {
   font-family: "Poppins", sans-serif;
   font-weight: 500;
@@ -15,8 +14,7 @@
 .logo {
   height: 150px;
 }
-
-/* media queries logo */
+/* media queries logo + navbar */
 @media screen and (min-width: 961px) and (max-width: 1320px) {
   .logo {
     height: 150px;
@@ -26,16 +24,55 @@
   .logo {
     height: 15vw;
   }
+    .whiteBar {
+    padding: 0 !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
 }
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+    .whiteBar {
+    padding: 0 !important;
+    padding-left: 10px !important;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
 @media screen and (max-width: 576px) {
   .logo {
     height: 87px;
   }
+  .whiteBar {
+    padding: 0 !important;
+    padding-left: 10px !important;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }
+
+/* navbar */
+  .whiteBar {
+    margin-right: 10px !important;
+    gap: 10px;
+    justify-content: end;
+  }
+
+/* media queries navbar link hover */
+@media screen and (max-width: 1051px) {
+  .mqMenu {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    
+  }
+  .whiteBar {
+    gap: 10px;
+  }
+}
+
 
 /* navbar link hover */
-
-.underline:hover {
-  color: #fff;
-}
-
