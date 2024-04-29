@@ -1,0 +1,18 @@
+@import "./node_modules/bootstrap/scss/functions";
+
+// override vars
+
+$primary:       #114232;
+$secondary:     #5F8670;
+$success:       #5F0F40;
+$info:          #FB8B24;
+$warning:       #E36414;
+$danger:        #9A031E;
+$light:         #fdf3e4;
+
+
+
+@import "./node_modules/bootstrap/scss/variables";
+@import "./node_modules/bootstrap/scss/variables-dark";
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss"
