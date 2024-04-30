@@ -1,3 +1,7 @@
+:root { 
+  --animation-timing: 0.6s;
+}
+
 /* font */
 .poppins-regular {
   font-family: "Poppins", sans-serif;
@@ -88,4 +92,44 @@ margin-right: 6px !important;
 .title {
   font-size: 2em;
 }
+
 /* navbar link hover */
+.menu .link::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  background:#F29446;
+  transform: scale(0);
+transition: transform var(--animation-timing);
+  transform-origin: right;
+  animation: fade-in var(--animation-timing);
+}
+  @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.link {
+  color: #231111;
+}
+
+.link:hover {
+  color: black !important;
+}
+
+.menu .link:hover::after {
+  transform: scale(1);
+  
+}
+.menu .link:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+
