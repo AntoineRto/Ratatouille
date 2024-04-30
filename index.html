@@ -1,26 +1,125 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="stylesheet" href="index.css">
-
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/92d46782db.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="csspages.css" />
 
     <title>Ratatouille</title>
+  </head>
+  <body>
+    <!-- ======= Header ======= -->
+    <header class="fixed-top d-flex align-items-center">
+      <div class="container-fluid d-flex align-items-center">
+        <nav class="navbar navbar-expand-md w-100">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"
+              ><img src="./src/img/logo-ratatouille.png" class="logo" alt="Logo Ratatouille"
+            /></a>
+            <button
+              class="navbar-toggler bg-body-tertiary"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="bg-body-tertiary bg-opacity-75 p-3 w-100 d-flex rounded-3 d-flex whiteBar">
+              <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav nav col-8 col-md-8 col-lg-8 col-xl-8 mqMenu">
+                  <li class="nav-item">
+                    <a class="nav-link text-black me-3 poppins-medium" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black me-3 poppins-medium" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black me-3 poppins-medium" href="resa.html">Réservations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-black poppins-medium" href="contact.html">Contact</a>
+                  </li>
+                </ul>
+                <ul class="navbar-nav nav col-4 col-md-4 col-lg-4 col-xl-4 whiteBar">
+                  <i class="fa-solid fa-mobile-screen"
+                    ><span class="ms-1 text-black poppins-medium pe-none">01 36 65 65 65</span></i
+                  >
+                  <i class="fa-regular fa-clock"
+                    ><span class="ms-1 text-black poppins-medium pe-none">Mardi-Samedi: <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 - 23:00</span></i
+                  >
+                </ul>
+              </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- End Header+navbar -->
 
-</head>
-<body>
-
-    <div class="bg-color-pwn">
-        <br>
-        
-    </br></div>
+    <!-- ======= Caroussel ======= -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner w-auto">
+        <div class="carousel-item active">
+          <img src="./src/img/slide-1.jpg" class="w-100 vh-100 object-fit-cover" alt="Restaurant slide 1" />
+        </div>
+        <div class="carousel-item vh-100">
+          <img src="./src/img/slide-2.jpg" class="w-100 vh-100 object-fit-cover" alt="Restaurant slide 2" />
+        </div>
+        <div class="carousel-item vh-100">
+          <img src="./src/img/slide-3.jpg" class="w-100 vh-100 object-fit-cover" alt="Restaurant slide 3" />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    
 
-    
-   
-</body>
+    <!-- End caroussel -->
+
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  </body>
 </html>
