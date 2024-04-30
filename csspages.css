@@ -92,6 +92,7 @@ margin-right: 6px !important;
 .title {
   font-size: 2em;
 }
+
 /* navbar link hover */
 .menu .link::after {
   content: "";
@@ -131,3 +132,4 @@ transition: transform var(--animation-timing);
   transform: scale(1);
   transform-origin: left;
 }
+
