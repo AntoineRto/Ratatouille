@@ -61,6 +61,7 @@ margin-right: 6px !important;
 @media screen and (min-width: 1100px)  {
   .whiteBar {
   min-height: 58px;
+  align-items: center;
   }
 }
 
