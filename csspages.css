@@ -35,8 +35,11 @@
     padding: 0 !important;
     padding-left: 10px !important;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
+  }
+  .margNumbers{
+    padding-left: 0 !important;
   }
 }
 @media screen and (max-width: 576px) {
@@ -47,8 +50,11 @@
     padding: 0 !important;
     padding-left: 10px !important;
     width: 100%;
-    margin-top: 10px;
+    margin-top: 30px;
     margin-bottom: 10px;
+  }
+    .margNumbers{
+    padding-left: 0 !important;
   }
 }
 
@@ -65,11 +71,6 @@ margin-right: 6px !important;
   }
 }
 
-
-
-
-
-
 /* navbar */
   .whiteBar {
     margin-right: 10px !important;
@@ -77,4 +78,14 @@ margin-right: 6px !important;
     justify-content: end;
   }
 
+/* card index text */
+.presText {
+  top: 60%;
+  right: 34px;
+  /* overflow-y: hidden; */
+
+}
+.title {
+  font-size: 2em;
+}
 /* navbar link hover */
