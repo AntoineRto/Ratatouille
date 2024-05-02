@@ -1,7 +1,6 @@
-import App from "./App.js"
+import App from "./App.js";
 
-const app1 = new App();
-const app2 = new App();
-const app3 = App.instance;
+const app = new App();
 
-console.log(app1);
+const element = document.getElementById('app');
+console.log(element);
