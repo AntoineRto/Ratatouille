@@ -27,7 +27,7 @@
 @media screen and (min-width: 961px) and (max-width: 1320px) {
   .logo {
     height: 150px;
-  } 
+  }
 }
 @media screen and (min-width: 577px) and (max-width: 960px) {
   .logo {
@@ -35,14 +35,14 @@
   }
 }
 @media screen and (min-width: 577px) and (max-width: 767px) {
-    .whiteBar {
+  .whiteBar {
     padding: 0 !important;
     padding-left: 10px !important;
     width: 100%;
     margin-top: 30px;
     margin-bottom: 10px;
   }
-  .margNumbers{
+  .margNumbers {
     padding-left: 0 !important;
   }
 }
@@ -57,41 +57,41 @@
     margin-top: 30px;
     margin-bottom: 10px;
   }
-    .margNumbers{
+  .margNumbers {
     padding-left: 0 !important;
   }
 }
 
 /* min 768 - max 790px */
 @media screen and (min-width: 767px) and (max-width: 804px) {
-.navbar-expand-md .navbar-nav .nav-link {
-margin-right: 6px !important;
+  .navbar-expand-md .navbar-nav .nav-link {
+    margin-right: 6px !important;
   }
 }
-@media screen and (min-width: 1100px)  {
+@media screen and (min-width: 1100px) {
   .whiteBar {
-  min-height: 58px;
-  align-items: center;
+    min-height: 58px;
+    align-items: center;
   }
 }
 
 /* navbar */
-  .whiteBar {
-    margin-right: 10px !important;
-    gap: 10px;
-    justify-content: end;
-  }
+.whiteBar {
+  margin-right: 10px !important;
+  gap: 10px;
+  justify-content: end;
+}
 
 /* card index text */
 .presText {
   top: 60%;
   right: 34px;
   /* overflow-y: hidden; */
-
 }
 .title {
   font-size: 2em;
 }
+
 
 /* navbar link hover */
 .menu .link::after {
@@ -132,4 +132,3 @@ transition: transform var(--animation-timing);
   transform: scale(1);
   transform-origin: left;
 }
-
