@@ -2,22 +2,17 @@
 
 // override vars
 
-$primary:       #114232;
-$secondary:     #5F8670;
-$success:       #5F0F40;
-$info:          #FB8B24;
-$warning:       #E36414;
-$danger:        #9A031E;
-$light:         #fdf3e4;
-
-
+$primary: #114232;
+$secondary: #5f8670;
+$success: #5f0f40;
+$info: #fb8b24;
+$warning: #e36414;
+$danger: #9a031e;
+$light: #fdf3e4;
 
 @import "./node_modules/bootstrap/scss/variables";
 @import "./node_modules/bootstrap/scss/variables-dark";
 
-
-
 // code...
 
-
-@import "./node_modules/bootstrap/scss/bootstrap.scss"
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
