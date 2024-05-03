@@ -30,13 +30,13 @@ export default class Navbar extends HTMLElement {
               <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                 <ul class="navbar-nav nav col-8 col-md-8 col-lg-8 col-xl-8 mqMenu menu">
                   <li class="nav-item item">
-                    <a class="nav-link me-3 poppins-medium link" href="/home" target="spa">Accueil</a>
+                    <a class="nav-link me-3 poppins-medium link" href="/" target="spa">Accueil</a>
                   </li>
                   <li class="nav-item item">
                     <a class="nav-link me-3 poppins-medium link" href="/menu" target="spa">Menu</a>
                   </li>
                   <li class="nav-item item">
-                    <a class="nav-link me-3 poppins-medium link" href="/resa" target="spa">Réservations</a>
+                    <a class="nav-link me-3 poppins-medium link" href="/reservation" target="spa">Réservations</a>
                   </li>
                   <li class="nav-item item">
                     <a class="nav-link poppins-medium link" href="/contact" target="spa">Contact</a>
@@ -61,4 +61,4 @@ export default class Navbar extends HTMLElement {
     `;
   }
 }
-customElements.define("navbar", Navbar);
+customElements.define("navbar-component", Navbar);

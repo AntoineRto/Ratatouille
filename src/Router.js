@@ -1,6 +1,8 @@
 import App from "./App.js";
 import HomeScreen from "./screens/HomeScreen.js";
-import LoginScreen from "./screens/LoginScreen.js";
+import MenuScreen from "./screens/MenuScreen.js";
+import ResaScreen from "./screens/ResaScreen.js";
+import ContactScreen from "./screens/ContactScreen.js";
 import NotfoundScreen from "./screens/NotfoundScreen.js";
 
 export default class Routeur {
@@ -25,16 +27,18 @@ export default class Routeur {
   };
 
   navigate = (e) => {
-    if (location.pathname == '/' || location.pathname == '/home') {
+    if (location.pathname == '/' || location.pathname == "/index.html") {
       this.#screen = new HomeScreen();
     } else if (location.pathname == "/menu") {
-      this.#screen = new LoginScreen();
+      this.#screen = new MenuScreen();
+    } else if (location.pathname == "/reservation") {
+      this.#screen = new ResaScreen();
+    } else if (location.pathname == "/contact") {
+      this.#screen = new ContactScreen();
     } else {
       this.#screen = new NotfoundScreen();
       
     }
-    
-    
     App.instance.render();
   };
 }
