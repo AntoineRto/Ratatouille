@@ -8,8 +8,8 @@ export default class Navbar extends HTMLElement {
 
   render() {
     return `
-          <header class="fixed-top d-flex align-items-center">
-      <div class="container-fluid d-flex align-items-center">
+      <header class="fixed-top d-flex align-items-center">
+      <div class="container-fluid position-relative d-flex align-items-center">
         <nav class="navbar navbar-expand-md w-100">
           <div class="container-fluid">
             <a class="navbar-brand" href="index.html"

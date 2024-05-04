@@ -7,13 +7,14 @@ export default class MenuComponent extends HTMLElement {
 
   render() {
     return `
-      <div class="container-fluid position-absolute top-0 mx-auto py-5 mt-4">
-        <div class="py-4"></div>
-        <section class="container rounded-4 bg-body-tertiary gap-3 bg-opacity-75 p-4 mt-5 mx-auto">
-        
+      <section class="container-fluid position-relative mt-5 mb-4" >
+        <div class="container rounded-4 bg-body-tertiary gap-3 bg-opacity-75 p-4">
         <!-- menu interactif isotope -->
-<section id="menu" class="menu">
+    <section id="menu" class="menu ">
       <div class="container">
+
+      <h2 class="d-flex justify-content-center satisfy-regular mt-2 p-3 mb-4">Menu</h2>
+
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="menu-filters">
@@ -115,9 +116,8 @@ export default class MenuComponent extends HTMLElement {
         <!-- end menu interactif isotope -->
         
         
+        </div>
         </section>
-        </div>
-        </div>
         `;
   }
 }

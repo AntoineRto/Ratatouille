@@ -252,3 +252,10 @@ h6 {
   color: #231111;
 }
 
+/* @media screen and (max-width: 767px) {
+
+} */
+
+.cardHeight {
+  top: 70px !important;
+}
