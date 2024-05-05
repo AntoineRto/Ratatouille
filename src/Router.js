@@ -29,8 +29,6 @@ export default class Router {
     }
 
     navigate = (e) => {
-        // this.#screen = document.createElement('div');
-        // this.#screen.textContent = location.pathname;
         if(location.pathname === '/' || location.pathname === '/home'){
             this.#screen = new HomeScreen();
         }

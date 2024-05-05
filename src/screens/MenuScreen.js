@@ -7,7 +7,7 @@ export default class MenuScreen extends HTMLElement {
     }
 
     render(){
-        `return <div>${this.constructor.name}</div>`; // return le nom de la classe
+        return `<div>${this.constructor.name}</div>`; // return le nom de la classe
     }
 }
 customElements.define('menu-screen', MenuScreen);
