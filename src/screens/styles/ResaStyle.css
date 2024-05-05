@@ -175,3 +175,23 @@ transition: transform var(--animation-timing);
   background-color:#ffb03b;
 }
 
+/* carousel on top */
+@media screen and (min-width: 250px) and (max-width: 992px) {
+  .carouselDirection {
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+  text-align: center;
+}
+.carouselDirection .pWidth{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 767px) {
+  .col-4 {
+    width: 100%;
+  }
+}

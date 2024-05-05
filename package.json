@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "local-web-server": "^5.3.3",
     "sass": "^1.75.0"
   }
 }

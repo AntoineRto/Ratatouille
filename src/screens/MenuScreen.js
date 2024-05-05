@@ -17,10 +17,12 @@ export default class MenuScreen extends HTMLElement {
   render() {
     return `
     <style>@import "./src/screens/styles/MenuStyle.css"</style>
+    
       <div>${this.props.navbar.render()}</div>
       <div>${this.props.backgroundCarousel.render()}</div>
       <div>${this.props.specialtyComponent.render()}</div>
       <div>${this.props.menuComponent.render()}</div>
+    <script>@import "./src/screens/scripts/menu.js"</script>
     `;
   }
 }

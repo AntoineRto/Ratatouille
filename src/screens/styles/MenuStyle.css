@@ -165,10 +165,7 @@ transition: transform var(--animation-timing);
 /*--------------------------------------------------------------
 # menu isotope
 --------------------------------------------------------------*/
-a {
-  text-decoration: none;
-  cursor: default;
-}
+
 
 /*--------------------------------------------------------------
 # Sections General
@@ -187,6 +184,7 @@ a {
 
 .section-title h2 span {
   color: #ffb03b;
+  
 }
 
 
@@ -259,7 +257,6 @@ a {
 .menu .menu-content span {
   position: relative;
   z-index: 3;
-  padding: 0 10px;
   font-weight: 600;
 }
 
@@ -267,7 +264,9 @@ a {
   font-style: italic;
   font-size: 14px;
   font-family: "Poppins", sans-serif;
+  font-weight: 400;
   color: #231111;
+  padding-left: 10px;
 }
 
 /* hauteur card par rapport au top */

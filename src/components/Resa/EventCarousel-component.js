@@ -11,9 +11,9 @@ export default class EventCarouselComponent extends HTMLElement {
         <div class="py-4">
           <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-5 mx-auto mb-3">
     
-    <div class="row">
+    <div class="row carouselDirection">
             <h2 class="d-flex justify-content-center mt-2 mb-4">Organisez un événement</h2>
-            <div id="carouselExampleCaptions" class="col-auto col-lg-4 mb-3 mb-lg-0 carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleCaptions" class="d-flex flex-wrap align-items-center col-4 col-sm- 8 col-md-8 col-lg-6 col-xl-4 mb-3 carousel slide" data-bs-ride="carousel">
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -45,9 +45,14 @@ export default class EventCarouselComponent extends HTMLElement {
                 <span class="visually-hidden">Next</span>
               </button>
             </div>
-            <div class="col-auto col-lg-8">
-              <p class="poppins-regular">Réception en extérieur, en intérieur, ou anniversaire ? <br />
-              Remplissez le formulaire ci-dessous pour nous faire part de votre projet et nous demander un devis. </p>
+            <div class="col-8 col-md-6 col-lg-6 col-xl-8 pWidth">
+              <p class="poppins-regular">
+                Découvrez une expérience culinaire sans pareille dans notre restaurant gastronomique trois étoiles, dirigé par le chef primé Yannick Franques. Chaque plat est une œuvre d'art exquise, préparée avec des ingrédients d'exception pour offrir une expérience gustative inoubliable.
+                <br />
+                <br />
+
+                Que ce soit pour une réception en plein air élégante ou une célébration intime, confiez-nous l'organisation de votre événement et laissez-nous vous émerveiller avec notre savoir-faire culinaire et notre service irréprochable. Contactez-nous dès aujourd'hui pour discuter de votre projet et recevoir un devis personnalisé.
+              </p>
             </div>
       
     

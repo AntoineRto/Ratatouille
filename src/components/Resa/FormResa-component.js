@@ -12,7 +12,7 @@ export default class FormResaComponent extends HTMLElement {
           <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-5 mx-auto mb-3">
 
       <form class="container">
-            <h2 class="d-flex justify-content-center mt-2 mb-4">Réservez une table dès maintenant</h2>
+            <h2 class="d-flex justify-content-center mt-2 mb-4">Réservez une table ou un événement dès maintenant</h2>
             <div class="row mb-4 g-4 align-items-center">
                 <div class="col-md-4">
                   <input type="text" id="inputName" class="form-control" placeholder="Votre Nom">

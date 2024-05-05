@@ -69,7 +69,7 @@ h6 {
 
 /* card index text */
 .presText {
-  top: 60%;
+  top: 50%;
   right: 34px;
   transition: width 0.5s ease;
 }
@@ -80,7 +80,8 @@ h6 {
 }
 @media screen and (max-width: 309px) {
   .presText {
-    width: 10rem !important;
+    width: 13.5rem !important;
+    right: 10px;
   }
 }
 
@@ -110,10 +111,11 @@ h6 {
     opacity: 1;
   }
 }
-
 .link {
   color: #231111;
 }
+
+/* suite navbar link hover */
 .link:hover {
   color: black !important;
 }
@@ -142,8 +144,10 @@ h6 {
     justify-content: flex-start !important;
   }
 }
+
+/* media queries - correction barre toggle */
 @media screen and (min-width: 373px) and (max-width: 482px) {
-  .whiteBar{
+  .whiteBar {
     width: 164px !important;
   }
 }
@@ -151,7 +155,7 @@ h6 {
   transition: width 0.5s ease;
 }
 @media screen and (max-width: 373px) {
-    .whiteBar{
-    width: 164px !important;
+  .whiteBar {
+    width: 170px !important;
   }
 }

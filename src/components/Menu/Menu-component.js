@@ -7,7 +7,7 @@ export default class MenuComponent extends HTMLElement {
 
   render() {
     return `
-      <section class="container-fluid position-relative mt-5 mb-4" >
+      <section id="menuIsotope" class="container-fluid position-relative mt-5 mb-4" >
         <div class="container rounded-4 bg-body-tertiary gap-3 bg-opacity-75 p-4">
         <!-- menu interactif isotope -->
     <section id="menu" class="menu ">
@@ -30,7 +30,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Ravigote d’escargots aux légumes primeurs</a><span>105</span>
+              <span class="poppins-medium">Ravigote d’escargots aux légumes primeurs</span><span>105</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -39,7 +39,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">La Ratatouille et son Carré d’agneau de Lozère</a><span>210</span>
+              <span class="poppins-medium">La Ratatouille et son Carré d’agneau de Lozère</span><span>210</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -48,7 +48,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Chaud-froid d’œuf mollet aux asperges</a><span>160</span>
+              <span class="poppins-medium">Chaud-froid d’œuf mollet aux asperges</span><span>160</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -57,7 +57,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Filets de saint-pierre aux coquillages</a><span>130</span>
+              <span class="poppins-medium">Filets de saint-pierre aux coquillages</span><span>130</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -66,7 +66,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Noix de ris de veau à la Rémy</a><span>145</span>
+              <span class="poppins-medium">Noix de ris de veau à la Rémy</span><span>145</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -75,7 +75,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-starters">
             <div class="menu-content">
-              <a href="#">Dariole de foie gras aux morilles</a><span>140</span>
+              <span class="poppins-medium">Dariole de foie gras aux morilles</span><span>140</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -84,7 +84,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-salads">
             <div class="menu-content">
-              <a href="#">Suprêmes de pigeon de Bresse et endives braisées à l’orange</a><span>130</span>
+              <span class="poppins-medium">Suprêmes de pigeon de Bresse et endives braisées</span><span>130</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -93,7 +93,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-salads"> 
             <div class="menu-content">
-              <a href="#">Escalopines de bar à l’émincé d’artichaut</a><span>185</span>
+              <span class="poppins-medium">Escalopines de bar à l’émincé d’artichaut</span><span>185</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
@@ -102,7 +102,7 @@ export default class MenuComponent extends HTMLElement {
 
           <div class="col-lg-6 menu-item filter-specialty">
             <div class="menu-content">
-              <a href="#">Darne de turbot rôtie aux asperges et morilles</a><span>250</span>
+              <span class="poppins-medium">Darne de turbot rôtie aux asperges et morilles</span><span>250</span>
             </div>
             <div class="menu-ingredients">
               Lorem, deren, trataro, filede, nerada
