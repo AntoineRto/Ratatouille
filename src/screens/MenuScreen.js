@@ -21,7 +21,6 @@ export default class MenuScreen extends HTMLElement {
       <div>${this.props.backgroundCarousel.render()}</div>
       <div>${this.props.specialtyComponent.render()}</div>
       <div>${this.props.menuComponent.render()}</div>
-      <script>@import "./src/screens/scripts/menu.js"</script>
     `;
   }
 }

@@ -19,6 +19,16 @@
   font-style: normal;
 }
 
+/* title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satisfy", sans-serif;
+}
+
 /* logo */
 .logo {
   height: 150px;
@@ -34,16 +44,18 @@
     height: 15vw;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 804px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    margin-right: 16px !important;
+  }
+}
+
 @media screen and (min-width: 577px) and (max-width: 767px) {
   .whiteBar {
     padding: 0 !important;
     padding-left: 10px !important;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  .margNumbers {
-    padding-left: 0 !important;
+
   }
 }
 @media screen and (max-width: 576px) {
@@ -53,40 +65,14 @@
   .whiteBar {
     padding: 0 !important;
     padding-left: 10px !important;
-    width: 100%;
-    margin-top: 30px;
-    margin-bottom: 10px;
-  }
-  .margNumbers {
-    padding-left: 0 !important;
   }
 }
 
-/* min 768 - max 790px */
-@media screen and (min-width: 767px) and (max-width: 804px) {
-  .navbar-expand-md .navbar-nav .nav-link {
-    margin-right: 6px !important;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .whiteBar {
-    min-height: 58px;
-    align-items: center;
-  }
-}
-
-/* navbar */
-.whiteBar {
-  margin-right: 10px !important;
-  gap: 10px;
-  justify-content: end;
-}
 
 /* card index text */
 .presText {
   top: 60%;
   right: 34px;
-  /* overflow-y: hidden; */
 }
 .title {
   font-size: 2em;
@@ -132,7 +118,49 @@ transition: transform var(--animation-timing);
   transform: scale(1);
   transform-origin: left;
 }
-
+@media screen and (max-width: 767px) {
+  .link:hover {
+  width: min-content;
+}
+.menu .link:hover::after {
+  transform-origin: none;
+}
+@media screen and (max-width: 767px) {
+  .navbar-toggler {
+    color: rgba(253, 243, 228, 0.7) !important;
+  }
+  .link:hover {
+    width: min-content;
+  }
+  .menu .link:hover::after {
+    transform-origin: none;
+  }
+  .whiteBar {
+    width: 60% !important;
+    margin-left: 15px;
+  }
+  .leftPosition {
+    justify-content: flex-start !important;
+  }
+}
+@media screen and (min-width: 373px) and (max-width: 482px) {
+  .whiteBar{
+    width: 164px !important;
+  }
+}
+.whiteBar {
+  transition: width 0.5s ease;
+}
+@media screen and (max-width: 373px) {
+    .whiteBar{
+    width: 164px !important;
+  }
+}
+.py-4 {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+}
+}
 
 /*--------------------------------------------------------------
 # menu isotope
@@ -141,16 +169,6 @@ a {
   text-decoration: none;
   cursor: default;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Satisfy", sans-serif;
-}
-
 
 /*--------------------------------------------------------------
 # Sections General
@@ -191,7 +209,7 @@ h6 {
   font-size: 14px;
   font-weight: 500;
   line-height: 1;
-  color: #444444;
+  color: #000000;
   margin: 0 3px 10px 3px;
   transition: all ease-in-out 0.3s;
   background: #fff;
@@ -252,10 +270,17 @@ h6 {
   color: #231111;
 }
 
-/* @media screen and (max-width: 767px) {
-
-} */
-
+/* hauteur card par rapport au top */
 .cardHeight {
   top: 70px !important;
+}
+
+/* card style */
+.card {
+  border-radius: 25px !important;
+  border: none;
+}
+.card-img-top {
+  border-top-left-radius: 25px !important;
+  border-top-right-radius: 25px !important;
 }

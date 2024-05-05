@@ -13,7 +13,7 @@ export default class MenuComponent extends HTMLElement {
     <section id="menu" class="menu ">
       <div class="container">
 
-      <h2 class="d-flex justify-content-center satisfy-regular mt-2 p-3 mb-4">Menu</h2>
+      <h2 class="d-flex justify-content-center mt-2 mb-4">Menu</h2>
 
         <div class="row">
           <div class="col-lg-12 d-flex justify-content-center">

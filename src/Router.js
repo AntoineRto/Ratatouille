@@ -31,7 +31,7 @@ export default class Routeur {
       this.#screen = new HomeScreen();
     } else if (location.pathname == "/menu") {
       this.#screen = new MenuScreen();
-    } else if (location.pathname == "/reservation") {
+    } else if (location.pathname == "/reservations") {
       this.#screen = new ResaScreen();
     } else if (location.pathname == "/contact") {
       this.#screen = new ContactScreen();
