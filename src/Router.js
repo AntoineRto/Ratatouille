@@ -4,7 +4,7 @@ import LoginScreen from './screens/LoginScreen.js';
 import MenuScreen from './screens/MenuScreen.js';
 import NotFoundScreen from './screens/NotFoundScreen.js';
 import ResaScreen from './screens/ResaScreen.js';
-import App from './script/App.js';
+import App from './App.js';
 
 export default class Router {
     #screen = null;
