@@ -17,7 +17,7 @@ export default class ResaScreen extends HTMLElement {
 
     render(){
         return `
-        <style>@import "./src/screens/styles/ResaStyle.css"</style>
+        <style>@import "./styles/ResaStyle.css"</style>
         <div>${this.props.navbar.render()}</div>
         <div>${this.props.backgroundCarousel.render()}</div>
         <div>${this.props.eventCarouselComponent.render()}</div>

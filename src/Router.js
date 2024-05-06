@@ -29,19 +29,19 @@ export default class Router {
     }
 
     navigate = (e) => {
-        if(location.pathname === '/' || location.pathname === '/home'){
+        if(location.pathname == '/' || location.pathname == '/home'){
             this.#screen = new HomeScreen();
         }
-        else if(location.pathname === '/login'){
+        else if(location.pathname == '/login'){
             this.#screen = new LoginScreen();
         }
-        else if(location.pathname === '/menu'){
+        else if(location.pathname == '/menu'){
             this.#screen = new MenuScreen();
         }
-        else if(location.pathname === '/contact'){
+        else if(location.pathname == '/contact'){
             this.#screen = new ContactScreen();
         }
-        else if(location.pathname === '/resa'){
+        else if(location.pathname == '/resa'){
             this.#screen = new ResaScreen();
         }
         else{
