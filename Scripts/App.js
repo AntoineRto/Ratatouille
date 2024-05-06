@@ -6,8 +6,8 @@ export default class App{
     static get instance() {return new App();}
     static getInstance() {return new App();}
 
-    #router = null;
-    get router() {return this.#router;}
+    #_router = null;
+    get router() {return this.#_router;}
 
     name = "MyApp";
 
@@ -17,7 +17,7 @@ export default class App{
         }
 
         App.#_instance = this;
-        this.#router = new Router();
+        this.#_router = new Router();
 
     }
 
