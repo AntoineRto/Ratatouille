@@ -113,8 +113,6 @@ export default class MenuComponent extends HTMLElement {
 
       </div>
     </section>
-        <!-- end menu interactif isotope -->
-        
         
         </div>
         </section>

@@ -11,6 +11,7 @@ export default class MenuScreen extends HTMLElement {
     this.props.backgroundCarousel = new BackgroundCarousel();
     this.props.specialtyComponent = new SpecialtyComponent();
     this.props.menuComponent = new MenuComponent();
+
     this.innerHTML = this.render();
   }
 
