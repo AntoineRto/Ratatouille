@@ -47,7 +47,7 @@ export default class EventCarouselComponent extends HTMLElement {
             </div>
             <div class="col-8 col-md-6 col-lg-6 col-xl-8 pWidth">
               <p class="poppins-regular">
-                Découvrez une expérience culinaire sans pareille dans notre restaurant gastronomique trois étoiles, dirigé par le chef primé Yannick Franques. Chaque plat est une œuvre d'art exquise, préparée avec des ingrédients d'exception pour offrir une expérience gustative inoubliable.
+                Découvrez une expérience culinaire sans pareille dans notre restaurant gastronomique trois étoiles, dirigé par le chef primé Rémy. Chaque plat est une œuvre d'art exquise, préparée avec des ingrédients d'exception pour offrir une expérience gustative inoubliable.
                 <br />
                 <br />
 
