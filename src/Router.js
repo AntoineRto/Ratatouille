@@ -4,7 +4,7 @@ import LoginScreen from './screens/LoginScreen.js';
 import MenuScreen from './screens/MenuScreen.js';
 import NotFoundScreen from './screens/NotFoundScreen.js';
 import ResaScreen from './screens/ResaScreen.js';
-import App from './script/App.js';
+import App from './App.js';
 
 export default class Router {
     #screen = null;
@@ -29,8 +29,6 @@ export default class Router {
     }
 
     navigate = (e) => {
-        // this.#screen = document.createElement('div');
-        // this.#screen.textContent = location.pathname;
         if(location.pathname === '/' || location.pathname === '/home'){
             this.#screen = new HomeScreen();
         }
