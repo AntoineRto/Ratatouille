@@ -36,7 +36,7 @@ export default class Navbar extends HTMLElement {
                       <a class="nav-link me-3 poppins-medium link" href="/menu" target="spa">Menu</a>
                     </li>
                     <li class="nav-item item">
-                      <a class="nav-link me-3 poppins-medium link" href="/reservations" target="spa">Réservations</a>
+                      <a class="nav-link me-3 poppins-medium link" href="/resa" target="spa">Réservations</a>
                     </li>
                     <li class="nav-item item">
                       <a class="nav-link poppins-medium link" href="/contact" target="spa">Contact</a>
