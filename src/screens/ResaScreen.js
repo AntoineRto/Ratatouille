@@ -1,7 +1,7 @@
-import BackgroundCarousel from "../components/Common/Background-carousel";
-import Navbar from "../components/Common/Navbar";
-import EventCarouselComponent from "../components/Resa/EventCarousel-component";
-import FormResaComponent from "../components/Resa/FormResa-component";
+import BackgroundCarousel from "../components/Common/Background-carousel.js";
+import Navbar from "../components/Common/Navbar.js";
+import EventCarouselComponent from "../components/Resa/EventCarousel-component.js";
+import FormResaComponent from "../components/Resa/FormResa-component.js";
 
 export default class ResaScreen extends HTMLElement {
 
@@ -17,7 +17,7 @@ export default class ResaScreen extends HTMLElement {
 
     render(){
         return `
-        <style>@import "./styles/ResaStyle.css"</style>
+        <style>@import "./src/screens/styles/ResaStyle.css"</style>
         <div>${this.props.navbar.render()}</div>
         <div>${this.props.backgroundCarousel.render()}</div>
         <div>${this.props.eventCarouselComponent.render()}</div>

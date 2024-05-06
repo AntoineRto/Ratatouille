@@ -1,6 +1,6 @@
-import BackgroundCarousel from "../components/Common/Background-carousel";
-import Navbar from "../components/Common/Navbar";
-import CardHomeComponent from "../components/Home/CardHome-component";
+import BackgroundCarousel from "../components/Common/Background-carousel.js";
+import Navbar from "../components/Common/Navbar.js";
+import CardHomeComponent from "../components/Home/CardHome-component.js";
 
 export default class HomeScreen extends HTMLElement {
 
@@ -15,7 +15,7 @@ export default class HomeScreen extends HTMLElement {
 
     render(){
         return `
-        <style>@import "./styles/HomeStyle.css"</style>
+        <style>@import "./src/screens/styles/HomeStyle.css"</style>
         <div>${this.props.navbar.render()}</div>
         <div>${this.props.backgroundCarousel.render()}</div>
         <div>${this.props.cardhomecomponent.render()}</div>
