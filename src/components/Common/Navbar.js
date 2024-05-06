@@ -12,7 +12,7 @@ export default class Navbar extends HTMLElement {
         <div class="container-fluid position-relative d-flex align-items-center">
           <nav class="navbar navbar-expand-md w-100">
             <div class="container-fluid leftPosition">
-              <a class="navbar-brand" href="index.html"
+              <a class="navbar-brand" href="/"
                 ><img src="./src/img/logo-ratatouille.png" class="logo " alt="Logo Ratatouille"
               /></a>
               <button
