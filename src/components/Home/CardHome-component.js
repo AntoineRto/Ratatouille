@@ -1,10 +1,6 @@
-export default class CardHomeComponent extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.innerHTML = this.render();
-    }
-  
+import Component from "../Component.js";
+
+export default class CardHomeComponent extends Component {
     render() {
       return `
         <div class="card opacity-75 position-absolute presText" style="width: 20rem">

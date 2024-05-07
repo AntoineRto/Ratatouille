@@ -1,10 +1,6 @@
-export default class MenuComponent extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.innerHTML = this.render();
-    }
-  
+import Component from "../Component.js";
+
+export default class MenuComponent extends Component {
     render() {
       return `
         <section id="menuIsotope" class="container-fluid position-relative mt-5 mb-4" >

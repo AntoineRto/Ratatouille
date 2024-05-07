@@ -1,10 +1,6 @@
-export default class FormContactComponent extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.innerHTML = this.render();
-    }
-  
+import Component from "../Component.js";
+
+export default class FormContactComponent extends Component {
     render() {
       return `
         <div class="container-fluid position-relative mx-auto pt-1 mb-4">

@@ -1,4 +1,6 @@
-export default class LoginScreen extends HTMLElement {
+import Screen from "./Screen.js";
+
+export default class LoginScreen extends Screen {
 
     constructor() {
         super();
@@ -7,7 +9,9 @@ export default class LoginScreen extends HTMLElement {
     }
 
     render(){
-        return `<div>${this.constructor.name}</div>`; // return le nom de la classe
+        return `
+        <div>${super.render()}</div>
+        <div>${this.constructor.name}</div>`; // return le nom de la classe
     }
 }
 customElements.define('login-screen', LoginScreen);
