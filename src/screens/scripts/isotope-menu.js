@@ -41,7 +41,6 @@
       });
 
       let menuFilters = select("#menu-filters li", true);
-
       on(
         "click",
         "#menu-filters li",
@@ -51,7 +50,6 @@
             el.classList.remove("filter-active");
           });
           this.classList.add("filter-active");
-
           menuIsotope.arrange({
             filter: this.getAttribute("data-filter"),
           });

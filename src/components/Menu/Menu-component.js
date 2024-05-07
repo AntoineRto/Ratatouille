@@ -3,7 +3,10 @@ export default class MenuComponent extends HTMLElement {
     super();
 
     this.innerHTML = this.render();
+
   }
+
+
 
   render() {
     return `
@@ -108,7 +111,7 @@ export default class MenuComponent extends HTMLElement {
               Lorem, deren, trataro, filede, nerada
             </div>
           </div>
-
+        <!-- fin menu interactif isotope -->
         </div>
 
       </div>

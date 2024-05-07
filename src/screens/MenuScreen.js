@@ -11,8 +11,14 @@ export default class MenuScreen extends HTMLElement {
     this.props.backgroundCarousel = new BackgroundCarousel();
     this.props.specialtyComponent = new SpecialtyComponent();
     this.props.menuComponent = new MenuComponent();
-
     this.innerHTML = this.render();
+  }
+
+  connectedCallback() {
+    // vérifier class sur html et css
+    const script = document.createElement("script");
+    script.src = "./src/screens/scripts/isotope-menu.js";
+    this.append(script);
   }
 
   render() {
@@ -22,7 +28,6 @@ export default class MenuScreen extends HTMLElement {
       <div>${this.props.backgroundCarousel.render()}</div>
       <div>${this.props.specialtyComponent.render()}</div>
       <div>${this.props.menuComponent.render()}</div>
-    <script>@import "./src/screens/scripts/menu.js"</script>
     `;
   }
 }
