@@ -10,7 +10,7 @@ export default class FormContactComponent extends HTMLElement {
       <div class="container-fluid position-relative mx-auto pt-1 mb-4">
           <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-2 mx-auto mb-2">
 
-          <form class="container">
+          <form class="container" novalidate>
             <h2 class="d-flex justify-content-center mt-2 mb-4">Contactez-nous</h2>
             
             <div class="row align-items-center">

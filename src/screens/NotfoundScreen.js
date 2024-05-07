@@ -1,4 +1,6 @@
-export default class NotfoundScreen extends HTMLElement {
+import MotherScreen from "./Main-Screen.js";
+
+export default class NotfoundScreen extends MotherScreen {
   constructor() {
     super();
 
