@@ -195,3 +195,9 @@ h2 {
     width: 100%;
   }
 }
+
+/* carousel icons display */
+button.carousel-control-prev,
+button.carousel-control-next {
+  display: none !important;
+}

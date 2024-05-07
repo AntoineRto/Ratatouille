@@ -283,3 +283,9 @@ transition: transform var(--animation-timing);
   border-top-left-radius: 25px !important;
   border-top-right-radius: 25px !important;
 }
+
+/* carousel icons display */
+button.carousel-control-prev,
+button.carousel-control-next {
+  display: none !important;
+}

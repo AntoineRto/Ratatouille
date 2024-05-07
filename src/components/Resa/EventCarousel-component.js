@@ -11,6 +11,7 @@ export default class EventCarouselComponent extends Component {
     <div class="row carouselDirection">
             <h2 class="d-flex justify-content-center mt-2 mb-4">Organisez un événement</h2>
             <div id="carouselExampleCaptions" class="d-flex flex-wrap align-items-center col-4 col-sm- 8 col-md-8 col-lg-6 col-xl-4 mb-3 carousel slide" data-bs-ride="carousel">
+              
               <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -19,18 +20,12 @@ export default class EventCarouselComponent extends Component {
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <img src="./src/img/event-birthday.jpg" class="d-block rounded-3 w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./src/img/event-custom.jpg" class="d-block rounded-3 w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
                 </div>
                 <div class="carousel-item">
                   <img src="./src/img/event-private.jpg" class="d-block rounded-3 w-100" alt="...">
-                  <div class="carousel-caption d-none d-md-block">
-                  </div>
                 </div>
               </div>
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
@@ -41,7 +36,9 @@ export default class EventCarouselComponent extends Component {
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
+              
             </div>
+
             <div class="col-8 col-md-6 col-lg-6 col-xl-8 pWidth">
               <p class="poppins-regular">
                 Découvrez une expérience culinaire sans pareille dans notre restaurant gastronomique trois étoiles, dirigé par le chef primé Rémy. Chaque plat est une œuvre d'art exquise, préparée avec des ingrédients d'exception pour offrir une expérience gustative inoubliable.

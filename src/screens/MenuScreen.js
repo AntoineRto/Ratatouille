@@ -2,7 +2,6 @@ import MenuComponent from "../components/Menu/Menu-component.js";
 import SpecialtyComponent from "../components/Menu/Specialty-component.js";
 import MainScreen from "./Main-Screen.js";
 
-
 export default class MenuScreen extends MainScreen {
   constructor() {
     super();
@@ -14,7 +13,7 @@ export default class MenuScreen extends MainScreen {
   connectedCallback() {
     // vérifier class sur html et css
     const script = document.createElement("script");
-    script.src = "./src/screens/scripts/isotope-menu.js";
+    script.src = "src/screens/scripts/isotope-menu.js";
     this.append(script);
   }
 
