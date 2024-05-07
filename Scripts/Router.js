@@ -1,5 +1,6 @@
 import App from "./App.js";
 import HomeScreen from "./Screens/ContactScreen.js";
+import IndexScreen from "./Screens/IndexScreen.js";
 import MenuScreen from "./Screens/MenuScreen.js";
 import NotfoundScreen from "./Screens/NotFoundScreen.js";
 import ReservationScreen from "./Screens/ReservationScreen.js"
@@ -36,6 +37,10 @@ export default class Router{
         else if (location.pathname == '/resa.html') {
             this.#screen = new ReservationScreen();
 
+        }
+        else if (location.pathname == '/index.html') {
+
+            this.#screen = new IndexScreen();
         }
 
         else{

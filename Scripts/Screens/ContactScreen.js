@@ -1,7 +1,7 @@
 import Carousel from "../Components/Carousel.js";
 
 //importer du CSS
-export default class ContactScreen extends HTMLElement{
+export default class ContactScreen extends HTMLElement {
 
     constructor(){
         super();
