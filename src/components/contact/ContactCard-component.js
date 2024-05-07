@@ -1,9 +1,6 @@
-export default class ContactCardComponent extends HTMLElement {
-  constructor() {
-    super();
+import Component from "../Component.js";
 
-    this.innerHTML = this.render();
-  }
+export default class ContactCardComponent extends Component {
 
   render() {
     return `

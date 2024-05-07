@@ -11,8 +11,8 @@ export default class HomeScreen extends MainScreen {
   render() {
     return `
     <style>@import "./src/screens/styles/HomeStyle.css"</style>
-<div>${super.render()}</div>
-      <div>${this.props.cardhomecomponent.render()}</div>
+    <div>${super.render()}</div>
+    <div>${this.props.cardhomecomponent.render()}</div>
     `;
   }
 }

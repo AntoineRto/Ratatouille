@@ -1,12 +1,6 @@
-export default class MenuComponent extends HTMLElement {
-  constructor() {
-    super();
+import Component from "../Component.js";
 
-    this.innerHTML = this.render();
-
-  }
-
-
+export default class MenuComponent extends Component {
 
   render() {
     return `

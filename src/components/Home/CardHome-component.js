@@ -1,9 +1,6 @@
-export default class CardHomeComponent extends HTMLElement {
-  constructor() {
-    super();
+import Component from "../Component.js";
 
-    this.innerHTML = this.render();
-  }
+export default class CardHomeComponent extends Component {
 
   render() {
     return `

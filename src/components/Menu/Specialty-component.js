@@ -1,9 +1,6 @@
-export default class SpecialtyComponent extends HTMLElement {
-  constructor() {
-    super();
+import Component from "../Component.js";
 
-    this.innerHTML = this.render();
-  }
+export default class SpecialtyComponent extends Component {
 
   render() {
     return `

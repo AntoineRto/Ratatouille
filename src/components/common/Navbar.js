@@ -1,10 +1,7 @@
+import Component from "../Component.js";
 
-export default class Navbar extends HTMLElement {
-  constructor() {
-    super();
+export default class Navbar extends Component {
 
-    this.innerHTML = this.render();
-  }
 
   render() {
     return `
