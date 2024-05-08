@@ -17,16 +17,16 @@ export default class BackgroundCarousel extends Component {
                   <img src="./src/img/slide-3.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-4.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
+                  <img src="./src/img/slide-4.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 4">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-5.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
+                  <img src="./src/img/slide-5.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 5">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-6.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
+                  <img src="./src/img/slide-6.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 6">
                 </div>
                 <div class="carousel-item">
-                  <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3">
+                  <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 7">
                 </div>
 
 
