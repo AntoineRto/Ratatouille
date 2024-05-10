@@ -1,7 +1,6 @@
 import Component from "../Component.js";
 
 export default class SpecialtyComponent extends Component {
-
   render() {
     return `
       <div class="container-fluid position-relative mx-auto pt-5 cardHeight">
@@ -13,7 +12,7 @@ export default class SpecialtyComponent extends Component {
             <div class="row d-flex flex-wrap">
               <div class="col d-flex justify-content-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/risdeveau.jpg" class="card-img-top" alt="Photo Ris de veau">
+                  <img src="./src/img/risdeveau.jpg" class="card-img-top" alt="Photo Ris de veau" draggable="false">
                     <div class="card-body">
                       <h4 class="card-title text-center">Noix de ris de veau</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -23,7 +22,7 @@ export default class SpecialtyComponent extends Component {
 
               <div class="col d-flex justify-content-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/slide-3.jpg" class="card-img-top" alt="Photo Ratatouille">
+                  <img src="./src/img/slide-3.jpg" class="card-img-top" alt="Photo Ratatouille" draggable="false">
                     <div class="card-body">
                       <h4 class="card-title text-center">La Ratatouille</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
@@ -33,7 +32,7 @@ export default class SpecialtyComponent extends Component {
 
               <div class="col d-flex justify-content-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/turbot.jpg" class="card-img-top" alt="¨Photo Darne de turbot">
+                  <img src="./src/img/turbot.jpg" class="card-img-top" alt="¨Photo Darne de turbot" draggable="false">
                     <div class="card-body">
                       <h4 class="card-title text-center">Darne de turbot rôtie</h4>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>

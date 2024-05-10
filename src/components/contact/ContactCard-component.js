@@ -1,7 +1,6 @@
 import Component from "../Component.js";
 
 export default class ContactCardComponent extends Component {
-
   render() {
     return `
       <div class="container-fluid position-relative mx-auto pt-5 cardHeight">
@@ -13,7 +12,7 @@ export default class ContactCardComponent extends Component {
             <div class="row d-flex flex-wrap">
               <div class="col d-flex justify-content-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/emile.png" class="card-img-top" alt="Photo Emile">
+                  <img src="./src/img/emile.png" class="card-img-top" alt="Photo Emile" draggable="false">
                     <div class="card-body bg-body-tertiary rounded-4 shadow-lg">
                       <h4 class="card-title text-center">Emile</h4>
                       <h6 class="card-subtitle mb-2 text-body-secondary text-center">Commis</h6>
@@ -24,7 +23,7 @@ export default class ContactCardComponent extends Component {
 
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/remy.png" class="card-img-top" alt="Photo Rémy">
+                  <img src="./src/img/remy.png" class="card-img-top" alt="Photo Rémy" draggable="false">
                     <div class="card-body bg-body-tertiary rounded-4 shadow-lg">
                       <h4 class="card-title text-center">Rémy</h4>
                       <h6 class="card-subtitle mb-2 text-body-secondary text-center">Master Chef</h6>
@@ -35,7 +34,7 @@ export default class ContactCardComponent extends Component {
 
               <div class="col d-flex justify-content-center align-items-center">
                 <div class="card m-2" style="width: 18rem;">
-                  <img src="./src/img/django.png" class="card-img-top" alt="Photo Django">
+                  <img src="./src/img/django.png" class="card-img-top" alt="Photo Django" draggable="false">
                     <div class="card-body bg-body-tertiary rounded-4 shadow-lg">
                       <h4 class="card-title text-center">Django</h4>
                       <h6 class="card-subtitle mb-2 text-body-secondary text-center">Chef de partie</h6>

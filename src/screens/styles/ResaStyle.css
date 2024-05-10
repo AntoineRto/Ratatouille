@@ -27,6 +27,11 @@ h4,
 h5,
 h6 {
   font-family: "Satisfy", sans-serif;
+  user-select: none;
+}
+/* no select */
+body, p, .whitebar {
+  user-select: none;
 }
 
 /* logo */
@@ -157,6 +162,11 @@ transition: transform var(--animation-timing);
   top: 70px !important;
 }
 
+
+/* for-control input style */
+.form-control {
+  border: 2px solid transparent !important;
+}
 /* placeholder font */
 .form-control::placeholder {
   font-family: "Poppins", sans-serif;
@@ -165,10 +175,20 @@ transition: transform var(--animation-timing);
   opacity: 0.7;
   font-size: 0.8rem;
 }
+/* input style */
+input {
+  border: 1px solid transparent !important;
+}
+.form-control:focus {
+  border: 2px solid #f29346 !important;
+  box-shadow: none;
+}
+
 
 /* font size btn */
 .btn {
   font-size: 0.8rem !important;
+  transition: 0.2s;
 }
 .btn:hover {
   color: #fff;

@@ -27,6 +27,11 @@ h4,
 h5,
 h6 {
   font-family: "Satisfy", sans-serif;
+  user-select: none;
+}
+/* no select */
+body, p, .whitebar {
+  user-select: none;
 }
 
 /* logo */

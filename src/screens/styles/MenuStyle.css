@@ -27,7 +27,20 @@ h4,
 h5,
 h6 {
   font-family: "Satisfy", sans-serif;
+  user-select: none;
 }
+/* no select ecxept span */
+body, p, .whiteBar, ul, li {
+  user-select: none;
+}
+span, .menu-ingredients {
+  user-select: text;
+}
+span::selection, .menu-ingredients::selection {
+background: #F29446 !important; 
+color: #fff !important;
+}
+
 
 /* logo */
 .logo {

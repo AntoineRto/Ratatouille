@@ -1,10 +1,9 @@
 import Component from "../Component.js";
 
 export default class MapComponent extends Component {
-
   render() {
     return `
-      <div class="container-fluid position-relative mx-auto pt-1">
+      <div class="container-fluid position-relative mx-auto pt-1 mapMaps">
           <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-5 mx-auto mb-2">
             
           <div class="row">
