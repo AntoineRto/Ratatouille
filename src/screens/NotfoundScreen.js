@@ -1,6 +1,6 @@
-import MotherScreen from "./Main-Screen.js";
+import MainScreen from "./Main-Screen.js";
 
-export default class NotfoundScreen extends MotherScreen {
+export default class NotfoundScreen extends MainScreen {
   constructor() {
     super();
 
@@ -9,10 +9,16 @@ export default class NotfoundScreen extends MotherScreen {
 
   render() {
     return `
-      <div class="h-100 d-flex flex-column align-items-center justify-content-center">
-      <div class="m-3">Cette page n'existe pas...</div>
-      <a href="/" target="spa">Page d'accueil</a>
-      </div>
+    <style>@import "./src/screens/styles/NotfoundStyle.css"</style>
+    <div>${super.render()}</div>
+    <div class="card position-absolute presText d-flex align-items-center" style="width: 20rem">
+      <img src="./src/img/oups.png" class="card-img-oups px-2 mt-2" alt="Sorry, wrong page" draggable="false">
+        <div class="card-body">
+          <p class="card-text poppins-regular text-center text-black mt-2">
+            Désolé, cette page n'existe pas...
+          </p>
+        </div>
+    </div>
     `;
   }
 }
