@@ -12,22 +12,22 @@ export default class FormContactComponent extends Component {
             
             <div class="row align-items-center">
               <div class="col-6">
-                <input type="text" id="inputName" class="form-control" placeholder="Votre Nom">
+                <input type="text" id="inputName" class="form-control" placeholder="Votre Nom" required>
               </div>
               <div class="col-6">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Votre Email">
+                <input type="email" id="inputEmail" class="form-control" placeholder="Votre Email" required>
               </div>
 
               <div class="row subject mt-4 mb-3">
                 <div class="col">
-                  <input type="text" id="inputSubject" class="form-control" placeholder="Objet de votre message">
+                  <input type="text" id="inputSubject" class="form-control" placeholder="Objet de votre message" required>
                 </div>
               </div>
             </div>
 
             <div class="row mt-2">
               <div>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5"></textarea>
+                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5" required></textarea>
               </div>
             </div>
           </form>
