@@ -7,20 +7,45 @@ export default class BackgroundCarousel extends HTMLElement {
   
     render() {
       return `
-        <div id="carouselExampleSlidesOnly" class="carousel slide position-fixed zn-1" data-bs-ride="carousel">
-          <div class="carousel-inner w-auto">
-            <div class="carousel-item active">
-              <img src="./src/img/slide-1.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 1" />
-            </div>
-            <div class="carousel-item">
-              <img src="./src/img/slide-2.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 2" />
-            </div>
-            <div class="carousel-item">
-              <img src="./src/img/slide-3.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 3" />
-            </div>
+      <div class="carousel-page">
+        <div id="carouselExampleSlidesOnly" class="carousel slide position-fixed zn-1" data-bs-ride="auto">
+          <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="./src/img/slide-1.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 1" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-2.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 2" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-3.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 3" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-4.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 4" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-5.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 5" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-6.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 6" draggable="false">
+                </div>
+                <div class="carousel-item">
+                  <img src="./src/img/slide-7.jpg" class="d-block vh-100 vw-100 object-fit-cover" alt="Restaurant slide 7" draggable="false">
+                </div>
+
+
+
           </div>
+              <button class="carousel-control-prev d-flex justify-content-start ms-3" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next d-flex justify-content-end me-3" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
         </div>
-          `;
+        </div>
+        `;
     }
   }
 customElements.define("background-carousel", BackgroundCarousel);
