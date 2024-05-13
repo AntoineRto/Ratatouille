@@ -28,16 +28,16 @@ export default class NavBar extends Components{
                   <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
                     <ul class="navbar-nav nav col-8 col-md-8 col-lg-8 col-xl-8 mqMenu menu">
                       <li class="nav-item item">
-                        <a class="nav-link me-3 poppins-medium link" href="index.html">Accueil</a>
+                        <a class="nav-link me-3 poppins-medium link" href="/index" target="spa">Accueil</a>
                       </li>
                       <li class="nav-item item">
-                        <a class="nav-link me-3 poppins-medium link" href="menu.html">Menu</a>
+                        <a class="nav-link me-3 poppins-medium link" href="/menu" target="spa">Menu</a>
                       </li>
                       <li class="nav-item item">
-                        <a class="nav-link me-3 poppins-medium link" href="resa.html">Réservations</a>
+                        <a class="nav-link me-3 poppins-medium link" href="resa" target="spa">Réservations</a>
                       </li>
                       <li class="nav-item item">
-                        <a class="nav-link poppins-medium link" href="contact.html">Contact</a>
+                        <a class="nav-link poppins-medium link" href="/contact" target="spa">Contact</a>
                       </li>
                     </ul>
                     <ul class="navbar-nav nav col-4 col-md-4 col-lg-4 col-xl-4 whiteBar margNumbers">

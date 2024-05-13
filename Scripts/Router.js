@@ -28,17 +28,17 @@ export default class Router{
 
     navigate = (e) => {
         
-        if(location.pathname == '/' || location.pathname == '/contact.html'){
+        if(location.pathname == '/' || location.pathname == '/contact'){
             this.#screen = new HomeScreen();
         }
-        else if (location.pathname == '/menu.html'){
+        else if (location.pathname == '/menu'){
             this.#screen = new MenuScreen();
         }
-        else if (location.pathname == '/resa.html') {
+        else if (location.pathname == '/resa') {
             this.#screen = new ReservationScreen();
 
         }
-        else if (location.pathname == '/index.html') {
+        else if (location.pathname == '/index') {
 
             this.#screen = new IndexScreen();
         }
