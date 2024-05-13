@@ -1,4 +1,5 @@
 import BackgroundCarousel from "../components/Common/Background-carousel.js";
+import Background from "../components/Common/Background.js";
 import Navbar from "../components/Common/Navbar.js";
 
 export default class Screen extends HTMLElement {
@@ -6,7 +7,7 @@ export default class Screen extends HTMLElement {
         super();
         this.props = {};
         this.props.navbar = new Navbar();
-        this.props.backgroundCarousel = new BackgroundCarousel();
+        this.props.backgroundCarousel = new Background();
     }
 
     render(){

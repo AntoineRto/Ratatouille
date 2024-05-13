@@ -3,7 +3,7 @@ import Router from './Router.js';
 export default class App {
 
     static #_instance = null;
-    #router = null;
+    #_router = null;
 
     constructor() {
         if (App.#_instance!= null && App.#_instance instanceof App) {
@@ -11,7 +11,7 @@ export default class App {
         }
 
         App.#_instance = this;
-        this.#router = new Router();
+        this.#_router = new Router();
     }
 
     static get instance() {
@@ -19,7 +19,7 @@ export default class App {
     }
 
     get router(){
-        return this.#router;
+        return this.#_router;
     }
 
     render(){
