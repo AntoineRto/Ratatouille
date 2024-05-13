@@ -3,17 +3,19 @@ import Component from "../Component.js";
 export default class FormContactComponent extends Component {
   constructor() {
     super();
-    this.querySelector("#contact-form").onsubmit = this.handleContactFormSubmit;
   }
 
-  handleContactFormSubmit(contactForm) {
+  handleContactFormSubmit = (e) => {
     e.preventDefault();
-    // Afficher console test
-    console.log("Form submitted!");
     // Accédez aux données du formulaire ici
-    const entries = Object.fromEntries(new FormData(contactForm));
-    // Afficher les données dans la console
-    console.log("Form data:", entries);
+    const entries = Object.fromEntries(new FormData(e.target));
+    console.log(entries);
+  };
+
+    connectedCallback() {
+    this.innerHTML = this.render();
+    console.log("Form connected");
+    this.querySelector("#contact-form").onsubmit = this.handleContactFormSubmit;
   }
 
   render() {
@@ -26,28 +28,29 @@ export default class FormContactComponent extends Component {
             
             <div class="row align-items-center">
               <div class="col-6">
-                <input type="text" id="inputName" class="form-control" placeholder="Votre Nom" required>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Votre Nom" required>
               </div>
               <div class="col-6">
-                <input type="email" id="inputEmail" class="form-control" placeholder="Votre Email" required>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Votre Email" required>
               </div>
 
               <div class="row subject mt-4 mb-3">
                 <div class="col">
-                  <input type="text" id="inputSubject" class="form-control" placeholder="Objet de votre message" required>
+                  <input type="text" id="subject" name="subject" class="form-control" placeholder="Objet de votre message" required>
                 </div>
               </div>
             </div>
 
             <div class="row mt-2">
               <div>
-                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5" required></textarea>
+                <textarea class="form-control" id="contact-message" name="contact-message" placeholder="Votre Message..." rows="5" required></textarea>
               </div>
             </div>
-          </form>
+          
           <div class="mt-4 mb-2 d-flex justify-content-center">
             <button type="submit" id="contact-submit-button" class="btn btn-light poppins-medium">Envoyer</button>
           </div>
+          </form>
 
           </section>
       </div>

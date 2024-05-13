@@ -1,7 +1,7 @@
 export default class Component extends HTMLElement {
-  constructor() {
+  constructor(render = true) {
     super();
 
-    this.innerHTML = this.render();
+    if (render) this.innerHTML = this.render();
   }
 }

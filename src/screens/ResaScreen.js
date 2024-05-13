@@ -15,7 +15,7 @@ export default class ResaScreen extends MainScreen {
     <style>@import "./src/screens/styles/ResaStyle.css"</style>
       <div>${super.render()}</div>
       <div>${this.props.eventCarouselComponent.render()}</div>
-      <div>${this.props.formResaComponent.render()}</div>
+      <div><formresa-component /></div>
     `;
   }
 }

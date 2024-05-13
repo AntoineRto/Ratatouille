@@ -18,7 +18,7 @@ export default class ContactScreen extends MainScreen {
       <div>${super.render()}</div>
       <div>${this.props.contactCardComponent.render()}</div>
       <div>${this.props.mapComponent.render()}</div>
-      <div>${this.props.formContactComponent.render()}</div>
+      <div><formcontact-component /></div>
     `;
   }
 }
