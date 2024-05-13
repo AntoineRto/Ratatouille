@@ -1,81 +1,75 @@
-import Carousel from "../Components/Carousel.js";
+
+import Screen from "../Screens/Screen.js"
+
 
 //importer du CSS
-export default class ContactScreen extends HTMLElement {
+export default class ContactScreen extends Screen {
 
     constructor(){
         super();
-        this.props = {}
-        this.props.caroussel = new Carousel({title:"Mon Caroussel"});
+        
+        
+        
+        
+        
+        
         this.innerHTML = this.render();
-        const cssLinks = //document.head.querySelectorAll('link');
-            document.styleSheets;
+        this.querySelector("form").onsubmit = this.handleFormOnSubmit;
+        let isValide = true;
+        
+
+
+      
+        
     }
+
+    handleFormOnSubmit = (e) => {
+
+      e.preventDefault();
+      const entries = Object.fromEntries(new FormData(e.target));
+      if (entries.email.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        console.log(entries);
+        
+        
+      } else {
+        e.target.querySelector("#sent-message").innerText = "le mot de passe doit faire 8 caractères";
+        
+      }
+      /*
+      if (entries.telephone.match(/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)) {
+        
+      } else {
+        
+      }
+      */
+      
+      
+
+      
+    }
+
+    
+
+     
 
     render(){
 
         return `
+
+        ${super.render()}
         
-<body>
-  <!-- ======= Header =======  -->
-  <header class="fixed-top d-flex align-items-center">
-    <div class="container-fluid d-flex align-items-center">
-      <nav class="navbar navbar-expand-md w-100">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="index.html"
-            ><img src="./src/img/logo-ratatouille.png" class="logo " alt="Logo Ratatouille"
-          /></a>
-          <button
-            class="navbar-toggler bg-light btn-border-light"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="bg-light bg-opacity-75 p-3 w-100 d-flex rounded-3 d-flex whiteBar">
-            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
-              <ul class="navbar-nav nav col-8 col-md-8 col-lg-8 col-xl-8 mqMenu menu">
-                <li class="nav-item item">
-                  <a class="nav-link me-3 poppins-medium link" href="index.html">Accueil</a>
-                </li>
-                <li class="nav-item item">
-                  <a class="nav-link me-3 poppins-medium link" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item item">
-                  <a class="nav-link me-3 poppins-medium link" href="resa.html">Réservations</a>
-                </li>
-                <li class="nav-item item">
-                  <a class="nav-link poppins-medium link" href="contact.html">Contact</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav nav col-4 col-md-4 col-lg-4 col-xl-4 whiteBar margNumbers">
-                <i class="fa-solid fa-mobile-screen"
-                  ><span class="ms-1 text-black poppins-medium pe-none">01 36 65 65 65</span></i
-                >
-                <i class="fa-regular fa-clock"
-                  ><span class="ms-1 text-black poppins-medium pe-none"
-                    >Mardi-Samedi: <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 - 23:00</span
-                  ></i
-                >
-              </ul>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </div>
-  </header>
+
+
+        
+        
+   
+  
 
 
  
 
 
- <div id="app" class="container-lg">
-     
- </div>
+
  <!-- <div id="links">
      <link rel="stylesheet" href="style.css">
  </div> -->
@@ -204,7 +198,7 @@ export default class ContactScreen extends HTMLElement {
             </div>
           </div>
   
-          <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+          <form novalidate id="form">
             <div class="row">
               <div class="col-md-6 form-group">
                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>

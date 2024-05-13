@@ -1,10 +1,8 @@
-export default class Caroussel extends HTMLElement{
+import Components from "./Components.js";
 
-    constructor(){
-        super();
+export default class Caroussel extends Components{
 
-        this.innerHTML = this.render();
-    }
+    
 
     render(){
         return ` <section class="container w-50 h-50">
