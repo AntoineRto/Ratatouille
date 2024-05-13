@@ -1,4 +1,5 @@
 import App from "./App.js";
+import ContactScreen from "./Screens/ContactScreen.js";
 import HomeScreen from "./Screens/ContactScreen.js";
 import IndexScreen from "./Screens/IndexScreen.js";
 import MenuScreen from "./Screens/MenuScreen.js";
@@ -29,7 +30,7 @@ export default class Router{
     navigate = (e) => {
         
         if(location.pathname == '/' || location.pathname == '/contact'){
-            this.#screen = new HomeScreen();
+            this.#screen = new ContactScreen();
         }
         else if (location.pathname == '/menu'){
             this.#screen = new MenuScreen();
