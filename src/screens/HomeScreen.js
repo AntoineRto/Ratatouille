@@ -1,5 +1,3 @@
-import BackgroundCarousel from "../components/Common/Background-carousel.js";
-import Navbar from "../components/Common/Navbar.js";
 import CardHomeComponent from "../components/Home/CardHome-component.js";
 import Screen from "./Screen.js";
 
