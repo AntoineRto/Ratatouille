@@ -12,13 +12,28 @@ export default class ContactScreen extends MainScreen {
     this.innerHTML = this.render();
   }
 
+  connectedCallback() {
+    const preloader = document.querySelector("#preloader");
+
+    setTimeout(() => {
+      preloader.style.opacity = "0";
+      preloader.style.visibility = "hidden";
+    }, 500);
+  }
+
   render() {
     return `
     <style>@import "./src/screens/styles/ContactStyle.css"</style>
+      <div id="preloader">  
+        <div class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
       <div>${super.render()}</div>
       <div>${this.props.contactCardComponent.render()}</div>
       <div>${this.props.mapComponent.render()}</div>
       <div><formcontact-component /></div>
+      
     `;
   }
 }

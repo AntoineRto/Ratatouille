@@ -174,3 +174,20 @@ img {
 .card {
   --bs-card-bg:#fdf3e4e5 !important;
 }
+
+/* preloader (spinner) */
+#preloader {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+  opacity: 1; 
+  visibility: visible; 
+  z-index: 9999; 
+  transition: all 0.4 ease;
+}

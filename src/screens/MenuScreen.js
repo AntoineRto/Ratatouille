@@ -10,16 +10,30 @@ export default class MenuScreen extends MainScreen {
     this.innerHTML = this.render();
   }
 
+  // connectedCallback() {
+  //   // vérifier class sur html et css
+  //   const script = document.createElement("script");
+  //   script.src = "src/screens/scripts/isotope-menu.js";
+  //   this.append(script);
+  // }
+
   connectedCallback() {
-    // vérifier class sur html et css
-    const script = document.createElement("script");
-    script.src = "src/screens/scripts/isotope-menu.js";
-    this.append(script);
+    const preloader = document.querySelector("#preloader");
+
+    setTimeout(() => {
+      preloader.style.opacity = "0";
+      preloader.style.visibility = "hidden";
+    }, 500);
   }
 
   render() {
     return `
     <style>@import "./src/screens/styles/MenuStyle.css"</style>
+    <div id="preloader">  
+        <div class="spinner-border text-dark" role="status">
+          <span class="visually-hidden">Loading...</span>
+        </div>
+      </div>
       <div>${super.render()}</div>
       <div>${this.props.specialtyComponent.render()}</div>
       <div>${this.props.menuComponent.render()}</div>
