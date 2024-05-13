@@ -1,5 +1,3 @@
-import BackgroundCarousel from "../components/Common/Background-carousel.js";
-import Navbar from "../components/Common/Navbar.js";
 import MenuComponent from "../components/Menu/Menu-component.js";
 import SpecialtyComponent from "../components/Menu/Specialty-component.js";
 import Screen from "./Screen.js";

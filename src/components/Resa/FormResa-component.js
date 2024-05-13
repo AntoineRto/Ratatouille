@@ -1,6 +1,16 @@
 import Component from "../Component.js";
 
 export default class FormResaComponent extends Component {
+  constructor() {
+    super();
+    this.querySelector("form").onsubmit = this.handleLoginFormSubmit;
+  }
+
+  handleLoginFormSubmit = (e) => {
+    e.preventDefault();
+    const entries = Object.fromEntries(new FormData(e.target));
+    console.log(entries);
+}
     render() {
       return `
         <div class="container-fluid position-relative mx-auto pt-1">

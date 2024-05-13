@@ -1,11 +1,6 @@
+import Component from "../Component.js";
 
-export default class Navbar extends HTMLElement {
-    constructor() {
-      super();
-  
-      this.innerHTML = this.render();
-    }
-  
+export default class Navbar extends Component {
     render() {
       return `
         <header class="fixed-top d-flex align-items-center">

@@ -1,5 +1,3 @@
-import BackgroundCarousel from "../components/Common/Background-carousel.js";
-import Navbar from "../components/Common/Navbar.js";
 import EventCarouselComponent from "../components/Resa/EventCarousel-component.js";
 import FormResaComponent from "../components/Resa/FormResa-component.js";
 import Screen from "./Screen.js";
