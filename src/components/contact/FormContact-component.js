@@ -1,13 +1,27 @@
 import Component from "../Component.js";
 
 export default class FormContactComponent extends Component {
+  constructor() {
+    super();
+    this.querySelector("#contact-form").onsubmit = this.handleContactFormSubmit;
+  }
+
+  handleContactFormSubmit(contactForm) {
+    e.preventDefault();
+    // Afficher console test
+    console.log("Form submitted!");
+    // Accédez aux données du formulaire ici
+    const entries = Object.fromEntries(new FormData(contactForm));
+    // Afficher les données dans la console
+    console.log("Form data:", entries);
+  }
 
   render() {
     return `
       <div class="container-fluid position-relative mx-auto pt-1 mb-4">
           <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-2 mx-auto mb-2">
 
-          <form class="container" novalidate>
+          <form id="contact-form" class="container" novalidate>
             <h2 class="d-flex justify-content-center mt-2 mb-4">Contactez-nous</h2>
             
             <div class="row align-items-center">
@@ -32,7 +46,7 @@ export default class FormContactComponent extends Component {
             </div>
           </form>
           <div class="mt-4 mb-2 d-flex justify-content-center">
-            <button type="submit" class="btn btn-light poppins-medium">Envoyer</button>
+            <button type="submit" id="contact-submit-button" class="btn btn-light poppins-medium">Envoyer</button>
           </div>
 
           </section>
