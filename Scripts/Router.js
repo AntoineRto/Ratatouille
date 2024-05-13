@@ -29,7 +29,7 @@ export default class Router{
 
     navigate = (e) => {
         
-        if(location.pathname == '/' || location.pathname == '/contact'){
+        if(location.pathname == '/' || location.pathname == '/contact.html' || location.pathname == '/contact'){
             this.#screen = new ContactScreen();
         }
         else if (location.pathname == '/menu'){
