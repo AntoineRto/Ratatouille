@@ -1,5 +1,7 @@
+import IdGenerator from "./IdGenerator.js";
+
 export default class Reservation {
-    id;
+    #id;
     name;
     email;
     phone;
@@ -9,7 +11,7 @@ export default class Reservation {
     textArea;
 
     constructor(props) {
-        this.id = props.id;
+        this.#id = IdGenerator.generateId();
         this.name = props.name;
         this.email = props.email;
         this.phone = props.phone;
