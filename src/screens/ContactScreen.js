@@ -9,7 +9,7 @@ export default class ContactScreen extends Screen {
         super();
         this.props.contactCardComponent = new ContactCardComponent();
         this.props.mapComponent = new MapComponent();
-        this.props.formContactComponent = new FormContactComponent();
+        this.props.append(new FormContactComponent());
         this.innerHTML = this.render();
     }
 

@@ -3,10 +3,10 @@ import Component from "../Component.js";
 export default class FormResaComponent extends Component {
   constructor() {
     super();
-    this.querySelector("form").onsubmit = this.handleLoginFormSubmit;
+    this.querySelector("form").onsubmit = this.handleResaFormSubmit;
   }
 
-  handleLoginFormSubmit = (e) => {
+  handleResaFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
     console.log(entries);
@@ -16,7 +16,6 @@ export default class FormResaComponent extends Component {
         <div class="container-fluid position-relative mx-auto pt-1">
           <div class="pb-2">
             <section class="container rounded-4 bg-body-tertiary bg-opacity-75 p-4 mt-5 mx-auto mb-3">
-  
         <form class="container">
               <h2 class="d-flex justify-content-center mt-2 mb-4">Réservez une table ou un événement dès maintenant</h2>
               <div class="row mb-4 g-4 align-items-center">
@@ -44,11 +43,10 @@ export default class FormResaComponent extends Component {
                     <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5"></textarea>
                   </div>
               </div>
-            </form>
-            <div class="mt-4 mb-2 d-flex justify-content-center">
+              <div class="mt-4 mb-2 d-flex justify-content-center">
               <button type="submit" class="btn btn-light poppins-medium sf-4">Envoyer</button>
             </div>
-  
+            </form>
             </section>
           </div>
         </div>

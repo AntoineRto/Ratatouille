@@ -7,7 +7,7 @@ export default class ResaScreen extends Screen {
     constructor() {
         super();
         this.props.eventCarouselComponent = new EventCarouselComponent();
-        this.props.formResaComponent = new FormResaComponent();
+        this.props.apppend(new FormResaComponent());
         this.innerHTML = this.render();
     }
 
