@@ -19,20 +19,20 @@ export default class FormContactComponent extends Component {
               <h2 class="d-flex justify-content-center mt-2 mb-4">Contactez-nous</h2>
               <div class="row align-items-center">
                 <div class="col-6">
-                  <input type="text" id="inputName" class="form-control" placeholder="Votre Nom">
+                  <input type="text" name="name" id="inputName" class="form-control" placeholder="Votre Nom">
                 </div>
                 <div class="col-6">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Votre Email">
+                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre Email">
                 </div>
                 <div class="row subject mt-4 mb-3">
                   <div class="col">
-                    <input type="text" id="inputSubject" class="form-control" placeholder="Objet de votre message">
+                    <input type="text" name="subject" id="inputSubject" class="form-control" placeholder="Objet de votre message">
                   </div>
                 </div>
               </div>
               <div class="row mt-2">
                 <div>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="Votre Message..." rows="5"></textarea>
+                  <textarea class="form-control" name="textArea" id="textAreaInput" placeholder="Votre Message..." rows="5"></textarea>
                 </div>
               </div>
               <div class="mt-4 mb-2 d-flex justify-content-center">
