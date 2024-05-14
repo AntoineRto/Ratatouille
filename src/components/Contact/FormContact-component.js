@@ -1,4 +1,5 @@
 import Component from "../Component.js";
+import Contact from "../../models/Contact.js";
 
 export default class FormContactComponent extends Component {
   constructor() {
@@ -9,7 +10,8 @@ export default class FormContactComponent extends Component {
   handleContactFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
-    console.log(entries);
+    const contact = new Contact(entries);
+    console.log(contact);
 }
     render() {
       return `
