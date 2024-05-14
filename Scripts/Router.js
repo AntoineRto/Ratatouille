@@ -1,6 +1,6 @@
 import App from "./App.js";
 import ContactScreen from "./Screens/ContactScreen.js";
-import HomeScreen from "./Screens/ContactScreen.js";
+
 import IndexScreen from "./Screens/IndexScreen.js";
 import MenuScreen from "./Screens/MenuScreen.js";
 import NotfoundScreen from "./Screens/NotFoundScreen.js";
