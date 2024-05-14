@@ -10,6 +10,8 @@ export default class ContactScreen extends MainScreen {
     this.props.mapComponent = new MapComponent();
     this.props.formContactComponent = new FormContactComponent();
     this.innerHTML = this.render();
+    // pas besoin de render le form ensuite grâce à append
+    this.append(this.props.formContactComponent);
   }
 
   connectedCallback() {
@@ -32,8 +34,6 @@ export default class ContactScreen extends MainScreen {
       <div>${super.render()}</div>
       <div>${this.props.contactCardComponent.render()}</div>
       <div>${this.props.mapComponent.render()}</div>
-      <div><formcontact-component /></div>
-      
     `;
   }
 }

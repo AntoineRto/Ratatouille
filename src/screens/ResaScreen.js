@@ -8,6 +8,8 @@ export default class ResaScreen extends MainScreen {
     this.props.eventCarouselComponent = new EventCarouselComponent();
     this.props.formResaComponent = new FormResaComponent();
     this.innerHTML = this.render();
+    // pas besoin de render le form ensuite grâce à append
+    this.append(this.props.formResaComponent);
   }
 
   connectedCallback() {
@@ -29,7 +31,6 @@ export default class ResaScreen extends MainScreen {
       </div>
       <div>${super.render()}</div>
       <div>${this.props.eventCarouselComponent.render()}</div>
-      <div><formresa-component /></div>
     `;
   }
 }

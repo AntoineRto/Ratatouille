@@ -246,3 +246,10 @@ button.carousel-control-next {
   z-index: 9999; 
   transition: all 0.4 ease;
 }
+
+.error-message {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #231111 !important;
+  font-size: 1rem;
+}

@@ -48,7 +48,7 @@ export default class FormResaComponent extends Component {
                   <input type="number" id="event" name="inputEvent" class="form-control" placeholder="Nombre de personnes" min="1" required>
                 </div>
                 <div>
-                  <textarea class="form-control" id="resa-message" name="resa-message" placeholder="Votre Message..." rows="5" required></textarea>
+                  <textarea class="form-control" id="resaMessage" name="resaMessage" placeholder="Votre Message..." rows="5" required></textarea>
                 </div>
             </div>
           <div class="mt-4 mb-2 d-flex justify-content-center">
