@@ -20,4 +20,8 @@ export default class Reservation {
         this.event = props.event;
         this.textArea = props.textArea;
     }
+
+    get id(){
+        return this.#id;
+    }
 }

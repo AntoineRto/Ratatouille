@@ -14,4 +14,8 @@ export default class Contact {
         this.subject = props.subject;
         this.textArea = props.textArea;
     }
+
+    get id(){
+        return this.#id;
+    }
 }
