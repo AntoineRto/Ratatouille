@@ -1,5 +1,5 @@
 import Component from "../Component.js";
-import Contact from "../../models/Contact.js";
+import Reservation from "../../models/Reservation.js";
 
 export default class FormResaComponent extends Component {
   constructor() {
@@ -10,6 +10,8 @@ export default class FormResaComponent extends Component {
   handleResaFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
+    const reservation = new Reservation(entries);
+    console.log(reservation);
 }
     render() {
       return `
@@ -26,7 +28,7 @@ export default class FormResaComponent extends Component {
                     <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre Email">
                   </div>
                   <div class="col-md-4">
-                    <input type="tel" name"phone" id="inputPhone" class="form-control" placeholder="Votre Téléphone">
+                    <input type="tel" name="phone" id="inputPhone" class="form-control" placeholder="Votre Téléphone">
                   </div>
               </div>
               <div class="row g-4 align-items-center">
