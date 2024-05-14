@@ -1,5 +1,5 @@
 import Component from "../Component.js";
-import Contact from "../../models/Contact.js";
+import ContactService from "../../services/ContactService.js";
 
 export default class FormContactComponent extends Component {
   constructor() {
@@ -10,8 +10,11 @@ export default class FormContactComponent extends Component {
   handleContactFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
-    const contact = new Contact(entries);
-    console.log(contact);
+    //Validate
+
+    //If Validate
+    const contactService = new ContactService();
+    contactService.create(entries);
 }
     render() {
       return `
