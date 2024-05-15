@@ -1,5 +1,5 @@
 import Component from "../Component.js";
-import Reservation from "../../models/Reservation.js";
+import ReservationService from "../../services/ReservationService.js";
 
 export default class FormResaComponent extends Component {
   constructor() {
@@ -10,8 +10,17 @@ export default class FormResaComponent extends Component {
   handleResaFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
-    const reservation = new Reservation(entries);
-    console.log(reservation);
+    const reservationService = new ReservationService(entries);
+    //Validate
+    const validation = reservationService.validate(entries);
+    // if (validation === true) {
+    //   reservationService.create(entries);
+    // }
+    // else {
+    //   this.querySelector('#inputEmail').textcontent = validation["email"];
+    // }
+    //If Validate
+    reservationService.create(entries);
 }
     render() {
       return `
