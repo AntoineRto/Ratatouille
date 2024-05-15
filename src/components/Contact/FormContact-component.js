@@ -10,10 +10,17 @@ export default class FormContactComponent extends Component {
   handleContactFormSubmit = (e) => {
     e.preventDefault();
     const entries = Object.fromEntries(new FormData(e.target));
+    const contactService = new ContactService();
     //Validate
+    const validation = contactService.validate(entries);
+    // if (validation === true) {
+    //   contactService.create(entries);
+    // }
+    // else {
+    //   this.querySelector('#inputEmail').textcontent = validation["email"];
+    // }
 
     //If Validate
-    const contactService = new ContactService();
     contactService.create(entries);
 }
     render() {
@@ -28,6 +35,7 @@ export default class FormContactComponent extends Component {
                 </div>
                 <div class="col-6">
                   <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Votre Email">
+                  <span class="text-danger"></span>
                 </div>
                 <div class="row subject mt-4 mb-3">
                   <div class="col">
