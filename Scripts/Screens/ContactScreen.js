@@ -1,4 +1,4 @@
-
+import ContactService from "../../services/ContactService.js";
 import Screen from "../Screens/Screen.js"
 
 
@@ -42,6 +42,9 @@ export default class ContactScreen extends Screen {
         
       }
       */
+
+      const contactService = new ContactService();
+      contactService.create(entries)
       
       
 
