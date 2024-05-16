@@ -7,7 +7,7 @@ export default class ContactService {
 
   constructor() {
     if (localStorage.getItem("contactList")) {
-      this.data = JSON.parse(localStorage.getItem("contactList")).map((jsonObj) => {
+      this.data = JSON.parse(localStorage.getItem("contactList")).map(jsonObj => {
         return new Contact(jsonObj);
       });
     }
