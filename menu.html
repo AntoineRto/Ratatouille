@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/92d46782db.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Satisfy&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="shortcut icon" href="./src/img/logo-ratatouille.png" type="image/png" />
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="./custom_bootstrap.scss" />
+  <link rel="stylesheet" href="csspages.css" />
+
+    <title>Le menu</title>
+</head>
+<body>
+<!-- ======= Header ======= -->
+<header class="fixed-top d-flex align-items-center">
+  <div class="container-fluid d-flex align-items-center">
+    <nav class="navbar navbar-expand-md w-100">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"
+          ><img src="./src/img/logo-ratatouille.png" class="logo " alt="Logo Ratatouille"
+        /></a>
+        <button
+          class="navbar-toggler bg-light btn-border-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="bg-light bg-opacity-75 p-3 w-100 d-flex rounded-3 d-flex whiteBar">
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav nav col-8 col-md-8 col-lg-8 col-xl-8 mqMenu menu">
+              <li class="nav-item item">
+                <a class="nav-link me-3 poppins-medium link" href="index.html">Accueil</a>
+              </li>
+              <li class="nav-item item">
+                <a class="nav-link me-3 poppins-medium link" href="menu.html">Menu</a>
+              </li>
+              <li class="nav-item item">
+                <a class="nav-link me-3 poppins-medium link" href="resa.html">Réservations</a>
+              </li>
+              <li class="nav-item item">
+                <a class="nav-link poppins-medium link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav nav col-4 col-md-4 col-lg-4 col-xl-4 whiteBar margNumbers">
+              <i class="fa-solid fa-mobile-screen"
+                ><span class="ms-1 text-black poppins-medium pe-none">01 36 65 65 65</span></i
+              >
+              <i class="fa-regular fa-clock"
+                ><span class="ms-1 text-black poppins-medium pe-none"
+                  >Mardi-Samedi: <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 11:00 - 23:00</span
+                ></i
+              >
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
+<!-- End Header+navbar -->
+
+<!-- background carousel -->
+<div id="carouselExampleSlidesOnly" class="carousel slide position-fixed zn-1" data-bs-ride="carousel">
+    <div class="carousel-inner w-auto">
+      <div class="carousel-item active">
+        <img src="./src/img/slide-1.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 1" />
+      </div>
+      <div class="carousel-item">
+        <img src="./src/img/slide-2.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 2" />
+      </div>
+      <div class="carousel-item">
+        <img src="./src/img/slide-3.jpg" class="vw-100 vh-100 object-fit-cover" alt="Restaurant slide 3" />
+      </div>
+    </div>
+  </div>
+<!-- end background carousel -->
+
+<!-- white card + menu -->
+<main class="container-fluid position-absolute top-0 mx-auto py-5 mt-4">
+        <div class="py-4"></div>
+        <section class="container rounded-4 bg-body-tertiary gap-3 bg-opacity-75 p-4 mt-5 mx-auto">
+          <div class="row">
+            <h1 class="d-flex justify-content-center mt-2 mb-4">Menu</h1>
+      <!-- menu interactif isotope -->
+      <section id="menu" class="menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="menu-filters">
+              <li data-filter="*" class="filter-active">Tout voir</li>
+              <li data-filter=".filter-starters">Entrées</li>
+              <li data-filter=".filter-salads">Plats</li>
+              <li data-filter=".filter-specialty">Spécialités</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row menu-container">
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Ravigote d’escargots aux légumes primeurs</a><span>105</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">La Ratatouille et son Carré d’agneau de Lozère</a><span>210</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Chaud-froid d’œuf mollet aux asperges</a><span>160</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Filets de saint-pierre aux coquillages</a><span>130</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Noix de ris de veau à la Rémy</a><span>145</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-starters">
+            <div class="menu-content">
+              <a href="#">Dariole de foie gras aux morilles</a><span>140</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads">
+            <div class="menu-content">
+              <a href="#">Suprêmes de pigeon de Bresse et endives braisées à l’orange</a><span>130</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-salads"> 
+            <div class="menu-content">
+              <a href="#">Escalopines de bar à l’émincé d’artichaut</a><span>185</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+
+          <div class="col-lg-6 menu-item filter-specialty">
+            <div class="menu-content">
+              <a href="#">Darne de turbot rôtie aux asperges et morilles</a><span>250</span>
+            </div>
+            <div class="menu-ingredients">
+              Lorem, deren, trataro, filede, nerada
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+      <!-- end menu interactif isotope -->
+          </div>
+        </section>
+      </main>
+      <!-- end white card + menu -->
+
+
+
+    <!-- <div class="container">
+        <h1 class="text-center text-light mt-4 mb-4 bg-primary">Menu du restaurant</h1>
+        <div class="row">
+          <div class="col-md-3 mx-auto">
+            <div class="card">
+              <img src="src/img/Canard-à-lorange-navets-550x372.jpg" class="img-fluid" style="max-height: 300px;"  alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Le coin coin</h5>
+                <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel, porro saepe facilis eveniet voluptates, laudantium delectus officiis facere quod ea minus et quam quas ut provident, natus fuga doloremque? Facilis!.</p>
+                <p class="card-text">Prix : 96€</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <div class="card">
+              <img src="src/img/i41134-ris-de-veau-a-l-estragon.jpg" class="img-fluid" style="max-height: 300px;"  alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Le vôooooooo</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores quis assumenda necessitatibus laudantium incidunt aliquid dolorum id molestias impedit reiciendis accusamus, cumque iusto tempora pariatur non libero architecto vel hic!</p>
+                <p class="card-text">Prix : 1337€</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mx-auto">
+            <div class="card">
+              <img src="src/img/plat-gastronomique.jpg" class="img-fluid" style="max-height: 300px;" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Du poisson (je crois)</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi eius nostrum minus in maiores, beatae rerum eligendi officia obcaecati molestias quidem repellat voluptas vero neque voluptate ex necessitatibus, temporibus sequi.</p>
+                <p class="card-text">Prix : 420€</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <h1 class="text-center mt-4 mb-4 bg-primary">La spécialité</h1>
+        <div class="col-md-6 mx-auto">
+            <div class="card">
+              <img src="https://images.ricardocuisine.com/services/recipes/5312.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Plat 4</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat eos ad possimus molestiae unde, culpa tempora, quos dignissimos ratione laborum, ea magni quidem facere laudantium! Magni repellat reprehenderit libero laborum!</p>
+                <p class="card-text">Prix : 69€</p>
+              </div>
+            </div>
+          </div>
+        </div>     -->
+        
+          <script type="module" src="index.js"></script>
+          <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+          <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+        
+    
+</body>
+</html>

@@ -5,13 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "delete_map": "sass custom_bootstrap.scss:index.css --no-source-map --style compressed"
+    "delete_map": "sass custom_bootstrap.scss:index.css --no-source-map --style compressed",
+    "dev": "ws --spa index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.3.3",
+    "i": "^0.3.7",
+    "local-web-server": "^5.3.3",
+    "npm": "^10.7.0",
     "sass": "^1.75.0"
   }
 }

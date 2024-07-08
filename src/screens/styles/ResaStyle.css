@@ -1,0 +1,250 @@
+:root { 
+  --animation-timing: 0.6s;
+}
+
+/* font */
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.satisfy-regular {
+  font-family: "Satisfy", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* title */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Satisfy", sans-serif;
+  user-select: none;
+}
+/* no select */
+body, p, .whitebar {
+  user-select: none;
+}
+
+/* logo */
+.logo {
+  height: 150px;
+}
+/* media queries logo + navbar */
+@media screen and (min-width: 961px) and (max-width: 1320px) {
+  .logo {
+    height: 150px;
+  }
+}
+@media screen and (min-width: 577px) and (max-width: 960px) {
+  .logo {
+    height: 15vw;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 804px) {
+  .navbar-expand-md .navbar-nav .nav-link {
+    margin-right: 16px !important;
+  }
+}
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  .whiteBar {
+    padding: 0 !important;
+    padding-left: 10px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .logo {
+    height: 87px;
+  }
+  .whiteBar {
+    padding: 0 !important;
+    padding-left: 10px !important;
+  }
+}
+
+/* card index text */
+.presText {
+  top: 60%;
+  right: 34px;
+}
+.title {
+  font-size: 2em;
+}
+
+
+/* navbar link hover */
+.menu .link::after {
+  content: "";
+  display: block;
+  height: 0.1rem;
+  background:#F29446;
+  transform: scale(0);
+transition: transform var(--animation-timing);
+  transform-origin: right;
+  animation: fade-in var(--animation-timing);
+}
+  @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.link {
+  color: #231111;
+}
+
+.link:hover {
+  color: black !important;
+}
+
+.menu .link:hover::after {
+  transform: scale(1);
+  
+}
+.menu .link:hover::after {
+  transform: scale(1);
+  transform-origin: left;
+}
+@media screen and (max-width: 767px) {
+  .navbar-toggler {
+    color: rgba(253, 243, 228, 0.7) !important;
+  }
+  .link:hover {
+    width: min-content;
+  }
+  .menu .link:hover::after {
+    transform-origin: none;
+  }
+  .whiteBar {
+    width: 60% !important;
+    margin-left: 15px;
+  }
+  .leftPosition {
+    justify-content: flex-start !important;
+  }
+}
+@media screen and (min-width: 373px) and (max-width: 482px) {
+  .whiteBar{
+    width: 164px !important;
+  }
+}
+.whiteBar {
+  transition: width 0.5s ease;
+}
+@media screen and (max-width: 373px) {
+    .whiteBar{
+    width: 164px !important;
+  }
+.py-4 {
+    padding-top: 3rem !important;
+    padding-bottom: 2rem !important;
+}
+}
+
+/* hauteur card par rapport au top */
+.cardHeight {
+  top: 70px !important;
+}
+
+
+/* for-control input style */
+.form-control {
+  border: 2px solid transparent !important;
+}
+/* placeholder font */
+.form-control::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0.7;
+  font-size: 0.8rem;
+}
+/* input style */
+input {
+  border: 1px solid transparent !important;
+}
+.form-control:focus {
+  border: 2px solid #f29346 !important;
+  box-shadow: none;
+}
+
+
+/* font size btn */
+.btn {
+  font-size: 0.8rem !important;
+  transition: 0.2s;
+}
+.btn:hover {
+  color: #fff;
+  background-color:#ffb03b;
+}
+
+/* carousel on top */
+@media screen and (min-width: 250px) and (max-width: 992px) {
+  .carouselDirection {
+    flex-direction: column;
+    align-items: center;
+}
+h2 {
+  text-align: center;
+}
+.carouselDirection .pWidth{
+  width: 100%;
+  margin-top: 20px;
+  text-align: center;
+}
+}
+@media screen and (max-width: 767px) {
+  .col-4 {
+    width: 100%;
+  }
+}
+
+/* carousel icons display */
+button.carousel-control-prev,
+button.carousel-control-next {
+  display: none !important;
+}
+
+/* preloader (spinner) */
+#preloader {
+  background-color: #000;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  height: 100%;
+  opacity: 1; 
+  visibility: visible; 
+  z-index: 9999; 
+  transition: all 0.4 ease;
+}
+
+.error-message {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #231111 !important;
+  font-size: 0.875rem;
+  /* height: 10px; */
+  margin-left: 10px;
+}
+
